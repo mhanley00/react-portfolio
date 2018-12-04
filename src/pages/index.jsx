@@ -12,6 +12,8 @@ import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
+import bikeWithBae from '../images/bike-with-bae.png';
+import ezCycle from '../images/ezcycle.png';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -40,12 +42,12 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
+  ${tw('text-5xl lg:text-6xl font-sans text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('text-4xl lg:text-4xl font-sans font-light underline text-white mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
     content: '';
@@ -61,7 +63,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-4xl font-sans font-light italic text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
@@ -101,11 +103,11 @@ const Avatar = styled.img`
 `;
 
 const AboutSub = styled.span`
-  ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
+  ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl font-sans lg:text-3xl xl:text-4xl')};
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans font-light pt-6 md:pt-12')};
 `;
 
 const ContactText = styled.p`
@@ -158,9 +160,11 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            <b>你好👋</b> <br /> 
+            Salut ✨  <br />
+            Hello, I'm Madeline Hanley 韓玫
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>Fashion designer turned full stack developer</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -171,35 +175,49 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
+          <Title className="font-light !important">Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title="FIND YOUR PACE"
+              link="https://mhanley00.github.io/run-pace-predictor/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              Find Your Pace is a weather-based run pace predictor. 
+              FYP uses runner input to predict how fast the user will run 
+              a specific distance today with the help of Google Maps geocoding and Dark Sky’s API’s. 
+              Unlike other race calculators, FYP calculates the effects of headwinds and heat offset 
+              from both the original race time and from the current weather to produce a more accurate time prediction. 
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+              title="BIKE WITH BAE"
+              link="https://bike-with-bae.herokuapp.com/"
+              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+              bgi={bikeWithBae}
+
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              Bike With Bae is a full stack mobile-friendly bike share and scooter app. 
+              BWB finds user location via IP address & displays the nearest 
+              shared vehicles around them in the greater DC area, on a map using the COORD API, 
+              Mapbox, and Leaflet, so that users can easily find bikes and scooters to simplify 
+              their commute.
+
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              title="EZCYCLE"
+              link="https://ezcycle.herokuapp.com/"
+              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+              bgi={ezCycle}
+            >
+              Need to recycle an old phone, or other electronics and live in the DC area? ezCycle can help. This app allows users to find electronics recycling centers in the greater DC/NOVA area with our lightening-fast filter. Coded in React, Leaflet, Algolia, Node, Express, and MongoDB. I managed data indexing, filtering, and map rendering for this MERN stack app. 
+
+            </ProjectCard>
+            <ProjectCard
+              title="PACE MAKER"
+              link="https://pacemaker-gw.herokuapp.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
-            </ProjectCard>
-            <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              In Pace Maker, users can create an account & save personal best running race times along with race weather conditions to track improvement over time. Pace Maker uses this data & weather API’s to predict target pace training zones (5k, 10k, & half-marathon pace) for today, based on weather offset.
+
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
@@ -250,18 +268,17 @@ const Index = () => (
         <Inner>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={avatar} alt="Madeline Hanley" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+            Madeline Hanley is a user-focused software developer with a passion for athletics, transportation, and travel.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+           From fashion designer to full stack developer, she has held a variety of cross-functional roles in design, 
+          product management, and digital marketing in the activewear and bikeshare industries, leveraging these past 
+          experiences to create applications with the end-user in mind. A multi-lingual, naturalized New Yorker, Madeline 
+          has lived in the U.S., Japan, France, Hong Kong, and mainland China. She is an avid marathon runner, cyclist, 
+          and triathlete, training and competing in her spare time, and a huge fan of the <a href="https://onlyatoms.com/blogs/cool-running-blog-the-lab/how-to-master-run-commuting" target="_blank">#RunCommute</a>.
           </AboutDesc>
         </Inner>
       </Content>

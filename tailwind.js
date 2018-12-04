@@ -195,18 +195,18 @@ module.exports = {
 
   fonts: {
     sans: [
-      '"Open Sans"',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
+      // '"Open Sans"',
+      // '-apple-system',
+      // 'BlinkMacSystemFont',
+      // 'Segoe UI',
+      // 'Roboto',
+      // 'Oxygen',
+      // 'Ubuntu',
+      // 'Cantarell',
+      // 'Fira Sans',
+      // 'Droid Sans',
       'Helvetica Neue',
-      'sans-serif',
+      // 'sans-serif',
     ],
     serif: [
       '"Cantata One"',
@@ -282,6 +282,7 @@ module.exports = {
     extrabold: 800,
     black: 900,
   },
+
 
   /*
   |-----------------------------------------------------------------------------
