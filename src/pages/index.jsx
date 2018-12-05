@@ -12,7 +12,7 @@ import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
-import findYourPace from '../images/bronx.jpg';
+import bronx from '../images/bronx.jpg';
 import bikeWithBae from '../images/bike-with-bae.png';
 import ezCycle from '../images/ezcycle.png';
 import '../styles/global';
@@ -182,7 +182,7 @@ const Index = () => (
               title="🏃🏻‍♀️FIND YOUR PACE"
               link="https://mhanley00.github.io/run-pace-predictor/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-              bgi={findYourPace}
+              bgi={bronx}
             >
               Find Your Pace is a weather-based run pace predictor. 
               FYP uses runner input to predict how fast the user will run 

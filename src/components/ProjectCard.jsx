@@ -22,11 +22,9 @@ const Wrapper = styled.a`
 // background: rgba(34,41,47, 0.8);
 // padding: 15px;
 // `;
-
-
-// md:text-white md:opacity-80:bg-black 
+// md:text-white md:bg-black  sm:text-white sm:bg-black
 const Text = styled.div`
-${tw('rounded-lg font-sans text-sm md:text-base relative lg:hover:text-white lg:text-transparent  md:text-white md:bg-black  sm:text-white sm:bg-black')};
+${tw('rounded-lg font-sans text-sm md:text-base relative lg:hover:text-white lg:text-transparent xl:hover:text-white xl:text-transparent')};
 padding: 15px;
 &:hover {
       background: rgba(34,41,47, 0.8);
