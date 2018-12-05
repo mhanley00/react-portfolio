@@ -12,6 +12,7 @@ import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
+import findYourPace from '../images/bronx.jpg';
 import bikeWithBae from '../images/bike-with-bae.png';
 import ezCycle from '../images/ezcycle.png';
 import '../styles/global';
@@ -107,7 +108,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans font-light pt-6 md:pt-12')};
+  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans font-light no-underline pt-6 md:pt-12')};
 `;
 
 const ContactText = styled.p`
@@ -181,6 +182,7 @@ const Index = () => (
               title="🏃🏻‍♀️FIND YOUR PACE"
               link="https://mhanley00.github.io/run-pace-predictor/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+              bgi={findYourPace}
             >
               Find Your Pace is a weather-based run pace predictor. 
               FYP uses runner input to predict how fast the user will run 
@@ -203,7 +205,7 @@ const Index = () => (
 
             </ProjectCard>
             <ProjectCard
-              title="♲ EZCYCLE"
+              title="EZCYCLE ♲"
               link="https://ezcycle.herokuapp.com/"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
               bgi={ezCycle}
@@ -212,7 +214,7 @@ const Index = () => (
 
             </ProjectCard>
             <ProjectCard
-              title="PACE MAKER ⏱"
+              title="⏱PACE MAKER"
               link="https://pacemaker-gw.herokuapp.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >

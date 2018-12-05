@@ -17,20 +17,35 @@ const Wrapper = styled.a`
   }
 `;
 
+// const Filter = styled.div`
+// ${tw('shadow-lg relative no-underline rounded-lg')};
+// background: rgba(34,41,47, 0.8);
+// padding: 15px;
+// `;
+
 const Text = styled.div`
-  ${tw('opacity-75 font-sans text-sm md:text-base')};
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+${tw('font-sans text-sm md:text-base relative hover:text-white text-transparent')};
+padding: 15px;
+&:hover {
+      background: rgba(34,41,47, 0.8);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
 `;
 
 const Title = styled.div`
   ${tw('uppercasetext-white text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans font-extrabold pt-8')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  &:hover {
+    visibility: visible;
+  }
 `;
 
 const ProjectCard = ({ title, link, children, bg, bgi }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}  bgi={bgi} >
+  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg} bgi={bgi} >
+    {/* <Filter> */}
     <Text>{children}</Text>
     <Title>{title}</Title>
+    {/* </Filter> */}
   </Wrapper>
 );
 
