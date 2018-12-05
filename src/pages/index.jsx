@@ -97,6 +97,10 @@ const InnerWave = styled.div`
 
 const AboutHero = styled.div`
   ${tw('flex flex-col lg:flex-row items-center mt-8')};
+  a {
+    color: #ffbbca;
+    text-decoration: none;
+  }
 `;
 
 const Avatar = styled.img`
@@ -109,20 +113,24 @@ const AboutSub = styled.span`
 
 const AboutDesc = styled.p`
   ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans font-light no-underline pt-6 md:pt-12')};
+  a {
+    color: #ffbbca;
+    text-decoration: none;
+  }
 `;
 
 const ContactText = styled.p`
   ${tw('text-grey-light font-sans text-xl md:text-2xl lg:text-3xl')};
   a {
-    color: #e07628;
+    color: #ffbbca;
     text-decoration: none;
   }
 `;
 
 const Footer = styled.footer`
-  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
+  ${tw('text-center text-black absolute pin-b p-6 font-sans text-sm')};
   a {
-    color: #e07628;
+    color: #222b2f;
     text-decoration: none;
   }
 `;
@@ -133,12 +141,12 @@ const Index = () => (
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
-          <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
-          <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
+          <SVG icon="triangle" className={hidden} width={48} stroke={colors['pink-lighter']} left="10%" top="20%" />
+          <SVG icon="hexa" width={48} stroke={colors['pink-lighter']} left="60%" top="70%" />
           <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['blue-dark']} left="80%" top="10%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['pink-lighter']} left="80%" top="10%" />
           <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="50%" />
           <SVG icon="circle" width={16} fill={colors['grey-darker']} left="70%" top="90%" />
           <SVG icon="triangle" width={16} stroke={colors['grey-darkest']} left="30%" top="65%" />
@@ -151,8 +159,8 @@ const Index = () => (
         <SVG icon="upDown" width={8} fill={colors['grey-darkest']} left="95%" top="90%" />
         <SVG icon="upDown" className={hidden} width={24} fill={colors['grey-darker']} left="40%" top="80%" />
         <SVG icon="triangle" width={8} stroke={colors['grey-darker']} left="25%" top="5%" />
-        <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
-        <SVG icon="box" className={hidden} width={64} fill={colors.purple} left="5%" top="90%" />
+        <SVG icon="circle" width={64} fill={colors['pink-lighter']} left="95%" top="5%" />
+        <SVG icon="box" className={hidden} width={64} fill={colors['pink-lighter']} left="5%" top="90%" />
         <SVG icon="box" width={6} fill={colors['grey-darkest']} left="10%" top="10%" />
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" />
         <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
@@ -169,7 +177,7 @@ const Index = () => (
         </Hero>
       </Content>
       <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
         speed={-0.2}
         offset={1.1}
         factor={2}
@@ -227,42 +235,42 @@ const Index = () => (
       <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
-          <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
-          <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
+          <SVG icon="upDown" width={8} fill={colors['pink-lighter']} left="70%" top="20%" />
+          <SVG icon="triangle" width={8} stroke={colors['pink-lighter']} left="25%" top="5%" />
           <SVG icon="circle" className={hidden} width={24} fill={colors.white} left="17%" top="60%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors.green} left="20%" top="90%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['pink-lighter']} left="20%" top="90%" />
           <SVG icon="triangle" width={12} stroke={colors.white} left="90%" top="30%" />
-          <SVG icon="circle" width={16} fill={colors.yellow} left="70%" top="90%" />
-          <SVG icon="triangle" className={hidden} width={16} stroke={colors.teal} left="18%" top="75%" />
+          <SVG icon="circle" width={16} fill={colors['pink-lighter']} left="70%" top="90%" />
+          <SVG icon="triangle" className={hidden} width={16} stroke={colors['pink-lighter']} left="18%" top="75%" />
           <SVG icon="circle" width={6} fill={colors.white} left="75%" top="10%" />
-          <SVG icon="upDown" className={hidden} width={8} fill={colors.green} left="45%" top="10%" />
+          <SVG icon="upDown" className={hidden} width={8} fill={colors['pink-lighter']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
         <SVG icon="circle" width={12} fill={colors.pink} left="80%" top="60%" />
-        <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
-        <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
-        <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
+        <SVG icon="box" width={6} fill={colors['pink-lighter']} left="10%" top="10%" />
+        <SVG icon="box" width={12} fill={colors['pink-lighter']} left="29%" top="26%" />
+        <SVG icon="hexa" width={16} stroke={colors['pink-lighter']} left="75%" top="30%" />
+        <SVG icon="hexa" width={8} stroke={colors['pink-lighter']} left="80%" top="70%" />
       </Divider>
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={3}>
         <UpDown>
-          <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
+          <SVG icon="box" className={hidden} width={6} fill={colors['pink-lighter']} left="50%" top="75%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
-          <SVG icon="upDown" className={hidden} width={24} fill={colors.orange} left="80%" top="80%" />
+          <SVG icon="upDown" className={hidden} width={24} fill={colors['pink-lighter']} left="80%" top="80%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" className={hidden} width={16} fill={colors.purple} left="5%" top="80%" />
+          <SVG icon="arrowUp" className={hidden} width={16} fill={colors['pink-lighter']} left="5%" top="80%" />
           <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
           <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
         </UpDownWide>
         <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
         <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
-        <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
+        <SVG icon="box" width={6} fill={colors['pink-lighter']} left="10%" top="10%" />
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
@@ -305,9 +313,9 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:mehanley2@gmail.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://www.linkedin.com/in/mehanley2/">LinkedIn</a> &{' '}
+            <a href="https://github.com/mhanley00">Github</a>
           </ContactText>
         </Inner>
         <Footer>
