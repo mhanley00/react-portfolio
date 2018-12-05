@@ -53,6 +53,8 @@ const colors = {
   'grey-darkest': '#273238',
   'grey-darker': '#364349',
   'grey-dark': '#70818a',
+  'real': '#000000',
+
   grey: '#9babb4',
   'grey-light': '#dae4e9',
   'grey-lighter': '#f3f7f9',
@@ -735,6 +737,7 @@ module.exports = {
     '25': '.25',
     '50': '.5',
     '75': '.75',
+    '80': '.80',
     '100': '1',
   },
 

@@ -18,13 +18,15 @@ const Wrapper = styled.a`
 `;
 
 // const Filter = styled.div`
-// ${tw('shadow-lg relative no-underline rounded-lg')};
+// ${tw('shadow-lg relative no-underline rounded-lg lg:invisible xl:invisible')};
 // background: rgba(34,41,47, 0.8);
 // padding: 15px;
 // `;
 
+
+// md:text-white md:opacity-80:bg-black 
 const Text = styled.div`
-${tw('font-sans text-sm md:text-base relative hover:text-white text-transparent')};
+${tw('rounded-lg font-sans text-sm md:text-base relative lg:hover:text-white lg:text-transparent  md:text-white md:bg-black  sm:text-white sm:bg-black')};
 padding: 15px;
 &:hover {
       background: rgba(34,41,47, 0.8);
@@ -43,9 +45,9 @@ const Title = styled.div`
 const ProjectCard = ({ title, link, children, bg, bgi }) => (
   <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg} bgi={bgi} >
     {/* <Filter> */}
+    {/* </Filter> */}
     <Text>{children}</Text>
     <Title>{title}</Title>
-    {/* </Filter> */}
   </Wrapper>
 );
 
