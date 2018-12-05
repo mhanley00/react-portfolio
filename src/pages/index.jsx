@@ -15,6 +15,7 @@ import avatar from '../images/avatar.jpg';
 import bronx from '../images/bronx.jpg';
 import bikeWithBae from '../images/bike-with-bae.png';
 import ezCycle from '../images/ezcycle.png';
+import running from '../images/running.jpeg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -225,6 +226,7 @@ const Index = () => (
               title="⏱PACE MAKER"
               link="https://pacemaker-gw.herokuapp.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+              bgi={running}
             >
               In Pace Maker, users can create an account & save personal best running race times along with race weather conditions to track improvement over time. Pace Maker uses this data & weather API’s to predict target pace training zones (5k, 10k, & half-marathon pace) for today, based on weather offset.
 

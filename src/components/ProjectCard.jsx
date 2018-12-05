@@ -22,7 +22,7 @@ const Wrapper = styled.a`
 // background: rgba(34,41,47, 0.8);
 // padding: 15px;
 // `;
-//OLD CSS
+//OLD CSS, for reference
 // ${tw('rounded-lg font-sans text-sm md:text-base relative lg:hover:text-white lg:text-transparent xl:hover:text-white xl:text-transparent sm:text-white sm:bg-black md:text-white md:bg-black')};
 const Text = styled.div`
 ${tw('rounded-lg font-sans text-sm md:text-base relative hover:text-white text-transparent')};
