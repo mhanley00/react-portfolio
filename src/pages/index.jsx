@@ -175,10 +175,10 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title className="font-light !important">Projects</Title>
+          <Title className="font-light">PROJECTS</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="FIND YOUR PACE"
+              title="🏃🏻‍♀️FIND YOUR PACE"
               link="https://mhanley00.github.io/run-pace-predictor/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
@@ -189,7 +189,7 @@ const Index = () => (
               from both the original race time and from the current weather to produce a more accurate time prediction. 
             </ProjectCard>
             <ProjectCard
-              title="BIKE WITH BAE"
+              title="BIKE WITH BAE 🚲"
               link="https://bike-with-bae.herokuapp.com/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
               bgi={bikeWithBae}
@@ -203,7 +203,7 @@ const Index = () => (
 
             </ProjectCard>
             <ProjectCard
-              title="EZCYCLE"
+              title="♲ EZCYCLE"
               link="https://ezcycle.herokuapp.com/"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
               bgi={ezCycle}
@@ -212,7 +212,7 @@ const Index = () => (
 
             </ProjectCard>
             <ProjectCard
-              title="PACE MAKER"
+              title="PACE MAKER ⏱"
               link="https://pacemaker-gw.herokuapp.com/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
@@ -266,7 +266,7 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>About</Title>
+          <Title>ABOUT</Title>
           <AboutHero>
             <Avatar src={avatar} alt="Madeline Hanley" />
             <AboutSub>
@@ -278,7 +278,8 @@ const Index = () => (
           product management, and digital marketing in the activewear and bikeshare industries, leveraging these past 
           experiences to create applications with the end-user in mind. A multi-lingual, naturalized New Yorker, Madeline 
           has lived in the U.S., Japan, France, Hong Kong, and mainland China. She is an avid marathon runner, cyclist, 
-          and triathlete, training and competing in her spare time, and a huge fan of the <a href="https://onlyatoms.com/blogs/cool-running-blog-the-lab/how-to-master-run-commuting" target="_blank">#RunCommute</a>.
+          and triathlete, training and competing in her spare time, and a huge fan of the   
+          <a href="https://onlyatoms.com/blogs/cool-running-blog-the-lab/how-to-master-run-commuting" target="_blank" className="no-underline"> #RunCommute</a>.
           </AboutDesc>
         </Inner>
       </Content>
