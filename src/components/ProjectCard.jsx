@@ -24,7 +24,7 @@ const Wrapper = styled.a`
 // `;
 // md:text-white md:bg-black  sm:text-white sm:bg-black
 const Text = styled.div`
-${tw('rounded-lg font-sans text-sm md:text-base relative sm:text-white sm:bg-black md:text-white md:bg-black lg:hover:text-white lg:text-transparent xl:hover:text-white xl:text-transparent')};
+${tw('rounded-lg font-sans text-sm md:text-base relative lg:hover:text-white lg:text-transparent xl:hover:text-white xl:text-transparent sm:text-white sm:bg-black md:text-white md:bg-black')};
 padding: 15px;
 &:hover {
       background: rgba(34,41,47, 0.85);
