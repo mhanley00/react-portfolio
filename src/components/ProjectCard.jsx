@@ -24,20 +24,17 @@ const Wrapper = styled.a`
 // `;
 // md:text-white md:bg-black  sm:text-white sm:bg-black
 const Text = styled.div`
-${tw('rounded-lg font-sans text-sm md:text-base relative lg:hover:text-white lg:text-transparent xl:hover:text-white xl:text-transparent')};
+${tw('rounded-lg font-sans text-sm md:text-base relative sm:text-white sm:bg-black md:text-white md:bg-black lg:hover:text-white lg:text-transparent xl:hover:text-white xl:text-transparent')};
 padding: 15px;
 &:hover {
-      background: rgba(34,41,47, 0.8);
+      background: rgba(34,41,47, 0.85);
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 `;
 
 const Title = styled.div`
   ${tw('uppercasetext-white text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans font-extrabold pt-8')};
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  &:hover {
-    visibility: visible;
-  }
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
 `;
 
 const ProjectCard = ({ title, link, children, bg, bgi }) => (
