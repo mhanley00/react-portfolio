@@ -316,7 +316,7 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <OutboundLink href="mailto:mehanley2@gmail.com" target="_blank">hi</OutboundLink> or find me elsewhere on the Internet:{' '}
+            Say <OutboundLink href="mailto:mehanley2@gmail.com?subject=Hello 👋&body=Hi Madeline,%0D%0A%0D%0ANice to e-meet you, I'm {your name}. I'd love to speak with you about {💻/🏃🏻‍/🚲️/🀄}.%0D%0A%0D%0ATalk soon!%0D%0A{your name}" target="_blank">hi</OutboundLink> or find me elsewhere on the Internet:{' '}
             <OutboundLink href="https://www.linkedin.com/in/mehanley2/" target="_blank">LinkedIn</OutboundLink> &{' '}
             <OutboundLink href="https://github.com/mhanley00" target="_blank">Github</OutboundLink>
           </ContactText>
