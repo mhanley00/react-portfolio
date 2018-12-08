@@ -10,6 +10,7 @@ import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
 import bronx from '../images/bronx.jpg';
@@ -291,7 +292,7 @@ const Index = () => (
           experiences to create applications with the end-user in mind. A multi-lingual, naturalized New Yorker, Madeline 
           has lived in the U.S., Japan, France, Hong Kong, and mainland China. She is an avid marathon runner, cyclist, 
           and triathlete, training and competing in her spare time, and a huge fan of the   
-          <a href="https://onlyatoms.com/blogs/cool-running-blog-the-lab/how-to-master-run-commuting" target="_blank" className="no-underline"> #RunCommute</a>.
+          <OutboundLink href="https://onlyatoms.com/blogs/cool-running-blog-the-lab/how-to-master-run-commuting" target="_blank" className="no-underline"> #RunCommute</OutboundLink>.
           </AboutDesc>
         </Inner>
       </Content>
@@ -315,14 +316,14 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:mehanley2@gmail.com">Hi</a> or find me on other platforms:{' '}
-            <a href="https://www.linkedin.com/in/mehanley2/">LinkedIn</a> &{' '}
-            <a href="https://github.com/mhanley00">Github</a>
+            Say <OutboundLink href="mailto:mehanley2@gmail.com" target="_blank">hi</OutboundLink> or find me elsewhere on the Internet:{' '}
+            <OutboundLink href="https://www.linkedin.com/in/mehanley2/" target="_blank">LinkedIn</OutboundLink> &{' '}
+            <OutboundLink href="https://github.com/mhanley00" target="_blank">Github</OutboundLink>
           </ContactText>
         </Inner>
         <Footer>
           &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          <OutboundLink href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</OutboundLink>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
