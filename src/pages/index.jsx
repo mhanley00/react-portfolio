@@ -14,7 +14,10 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
 import bronx from '../images/bronx.jpg';
-import bikeWithBae from '../images/bike-with-bae.png';
+// import bikeWithBae from '../images/bike-with-bae.png';
+// import bikeWithBae from '../images/bikewithbae.png';
+// import bikeWithBae from '../images/bwb.png';
+import bikeWithBae from '../images/opt2.png';
 import ezCycle from '../images/ezcycle.png';
 import running from '../images/running.jpeg';
 import '../styles/global';
@@ -201,17 +204,17 @@ const Index = () => (
               from both the original race time and from the current weather to produce a more accurate time prediction. 
             </ProjectCard>
             <ProjectCard
-              title="BIKE WITH BAE 🚲"
-              link="https://bike-with-bae.herokuapp.com/"
+              title="🚲BIKE WITH BAE 🚲"
+              link="https://beta.blueraster.io/meh/bike-with-bae/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
               bgi={bikeWithBae}
 
             >
-              Bike With Bae is a full stack mobile-friendly bike share and scooter app. 
-              BWB finds user location via IP address & displays the nearest 
-              shared vehicles around them in the greater DC area, on a map using the COORD API, 
-              Mapbox, and Leaflet, so that users can easily find bikes and scooters to simplify 
-              their commute.
+              Want to ride bikeshare with friends? Bike With Bae will help you find Capital Bikeshare and JUMP
+              bikes in the DC metro area. Select how many people you're riding with, how far you're willing to walk,
+              and what bikeshare companies you prefer. BWB displays the nearest 
+              bikeshare stations that have enough bikes for you and your friends to ride. BWB uses the 
+              Esri ArcGIS for JavaScript API, Material UI, Redux, and Webpack. I presented BWB at DC's Transportation Techies meetup in April 2019. 
 
             </ProjectCard>
             <ProjectCard
