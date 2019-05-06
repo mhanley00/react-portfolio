@@ -205,7 +205,7 @@ const Index = () => (
             </ProjectCard>
             <ProjectCard
               title="🚲BIKE WITH BAE 🚲"
-              link="https://beta.blueraster.io/meh/bike-with-bae/"
+              link="https://bikewithbae.com/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
               bgi={bikeWithBae}
 
